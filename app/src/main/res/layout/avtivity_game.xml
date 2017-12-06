@@ -1,6 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/main_money_tv"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <!--1 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/item1_btn"
+            android:text="@string/work"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+         <TextView
+             android:id="@+id/item1_count_tv"
+             android:gravity="center"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="3"/>
+
+        </LinearLayout>
+
+        <!--2 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/item2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/item2_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <!--3 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/item3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/item3_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <!--4 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/item4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/item4_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <!--5 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/item5_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/item5_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+
+        <!--6 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/item6_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/item6_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <!--7 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/item7_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/item7_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"/>
+             </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

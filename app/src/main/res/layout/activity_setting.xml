@@ -1,6 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_setting"
+        android:textSize="30sp"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"
+        android:layout_below="@+id/setting_title"
+        android:layout_marginTop="10dp" />
+
+    <!--1 layout-->
+    <LinearLayout
+        android:id="@+id/linearLayout_music"
+        android:layout_below="@id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setting_music"
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+
+        <ToggleButton
+            android:id="@+id/setting_music_on_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_music"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"
+        android:layout_below="@+id/linearLayout_music"
+        android:layout_marginTop="30dp" />
+
+    <!--2 layout-->
+    <LinearLayout
+        android:id="@+id/linearLayout_effects"
+        android:layout_below="@id/linearLayout_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setting_effects"
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+
+        <ToggleButton
+            android:id="@+id/setting_sound_effects_on_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_btn"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"
+        android:layout_below="@id/linearLayout_effects"
+        android:layout_marginTop="30dp" />
+
+    <!--3 layout-->
+    <LinearLayout
+        android:id="@+id/linearLayout_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_effects"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setting_vibrate"
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+
+        <ToggleButton
+            android:id="@+id/setting_vibro_on_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_btn"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"
+        android:layout_below="@id/linearLayout_vibrate"
+        android:layout_marginTop="20dp" />
+
+    <!--1 layout-->
+    <LinearLayout
+        android:id="@+id/linearLayout_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_vibrate"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="50dp">
+
+    </LinearLayout>
+
+</RelativeLayout>

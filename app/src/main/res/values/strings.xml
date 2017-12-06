@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Kommersant</string>
-    <string name="menu_new_game">New Game</string>
-    <string name="menu_setting">Setting</string>
-    <string name="menu_about">About</string>
+    <string name="menu_new_game">Нова гра</string>
+
+    <string name="work">Попрацювати</string>
+    
+    <string name="menu_setting">Налаштування</string>
+        <string name="setting_btn">Увімкн</string>
+        <string name="setting_music">Фонова музика</string>
+        <string name="setting_effects">Звукові ефекти</string>
+        <string name="setting_vibrate">Вібрація</string>
+        <string name="setting_level">Складність</string>
+    
+    <string name="menu_about">Про програму</string>
+        <string name="about_info">Програма Комерсант. \n Ткачук Назар</string>
+    
 </resources>
